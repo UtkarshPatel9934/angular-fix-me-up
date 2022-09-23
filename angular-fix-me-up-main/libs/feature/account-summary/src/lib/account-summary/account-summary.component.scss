@@ -1,0 +1,16 @@
+@import 'theme';
+
+// @use 'theme'
+// th[scope='col'] {
+//   border-bottom: 1px solid #333;
+// }
+
+// tr:nth-child(2n) {
+//   background-color: #DEDEDE;
+// }
+
+th{
+  a{
+    @include link()
+  }
+}

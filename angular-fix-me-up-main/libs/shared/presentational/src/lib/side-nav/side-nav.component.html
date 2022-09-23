@@ -1,0 +1,13 @@
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="hamburger">
+  <a class="icon">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<ul class="myLinks">
+  <li>
+    <a *ngFor="let item of sideNavItems" [routerLink]="item.link" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact:true}">{{ item.title }}</a>
+  </li>
+</ul>

@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+/* Added the required bootstrap import statements */
+@use 'styles-font';
+@use 'theme';
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+// TODO: 1. the header (footer) needs to run flush to the top (bottom) and sides\
+
+// Styles for body
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+// Styles for header
+header {
+  position: fixed;
+  width: 100%;
+}
+
+// Styles for footer
+footer {	
+  padding-top: 40px;
+  height: 15vh;
+  position: fixed;
+  box-sizing: border-box;	
+  border-top: 2px solid rgb(245, 77, 16);
+  width: 100%;
+  background: theme.$brand-bg-alt;
+  color: theme.$brand-white-color;
+  padding-right: theme.$brand-padding;
+  padding-left: theme.$brand-padding;
+}
+
+
+/* Media Query to enable responsiveness for Footer */
+@media (max-width: 640px) {
+  footer{
+    padding: 0;
+  }
+}
+
+
+/* Importing required Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

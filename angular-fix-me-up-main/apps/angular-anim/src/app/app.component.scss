@@ -1,0 +1,18 @@
+// TODO: 5. Fixing one thing may break other things, but sometimes it has to be done
+
+
+
+.router-outlet {
+  // try to keep these
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+  padding-top: 15vh;
+  min-height: 85vh;
+  max-height: 85vh;
+  overflow: scroll;
+  // don't  really care about the below
+  padding-left: 30px;
+  padding-right: 30px;
+}

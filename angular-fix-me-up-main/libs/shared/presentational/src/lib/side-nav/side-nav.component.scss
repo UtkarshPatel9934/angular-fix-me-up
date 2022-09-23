@@ -1,0 +1,82 @@
+@import 'theme';
+
+// TODO: 14. fix the deprecation
+
+
+#hamburger{
+  color: red;
+  display: none;
+}
+ul {
+  margin-top: 0px;
+  padding: 0px;
+  li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    .active{
+      background: $brand-bg ;
+      color: white;
+      font-weight: bold;
+      border-top: 1px solid rgb(245, 77, 16);
+    }
+    a {
+      @include link();
+      padding: 10px 30px;
+      text-align: center;
+      width: 100%;
+      font-size: 1.1rem;
+      color: $brand-font-color-inverted;
+      background: rgb(40, 38, 38);
+      &:hover {
+        background: $brand-bg;
+        -webkit-transition: all 0.5s ease-out, opacity 0.1s ease-out;
+        -moz-transition: all 0.5s ease-out, opacity 0.1s ease-out;
+        -o-transition: all 0.5s ease-out, opacity 0.1s ease-out;
+        transition: all 0.5s ease-out, opacity 0.1s ease-out;
+        color: white;
+        font-weight: bold;
+        border-top: 0.5px solid rgb(255, 255, 255);
+        border-left: 0.5px solid rgb(255, 255, 255);
+        border-right: 0.5px solid rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 641px) {
+  #hamburger {
+      display: none !important;
+  }
+  ul{
+    display: block !important;
+    li{
+      display: flex !important;
+    }
+  }
+}
+
+
+@media (max-width: 640px) {
+ ul{
+  display: none;
+  li{
+    flex-direction: column;
+   }
+ } 
+ #hamburger{
+  border-top: 1px solid rgb(245, 77, 16);
+  display: block;
+  background-color: $brand-bg;
+  padding: 5px 0;
+  a{
+    @include link();
+    i{
+      font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}

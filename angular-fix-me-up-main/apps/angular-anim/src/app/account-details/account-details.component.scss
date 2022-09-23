@@ -1,0 +1,23 @@
+@import 'theme';
+
+.accountDetailCard{
+	background-color: #ececec;
+}
+
+.card-title{
+	color: #142d4c;
+	font-weight: bold;
+}
+.accountDetailBody{
+	h3{
+		text-transform: uppercase;
+	}
+	color: #142d4c;
+	background-color:  #9fd3c7;
+	border: 1px solid $brand-borders;
+}
+
+.card-header, .card-footer{
+	color: #142d4c;
+}
+

@@ -1,0 +1,21 @@
+<!-- TODO: how to retrieve account id and other account details in this route? -->
+<h1>Account Details</h1>
+
+<div class="card text-center accountDetailCard">
+	<div class="card-header">
+		Private Bank Inc.
+	</div>
+	<div class="card-body">
+		<h2 class="card-title">Account Details</h2>
+		<hr>
+		<div class="p-3 rounded accountDetailBody">
+			<h4>Account Number : <strong>{{accountDetails?.id}}</strong> </h4>
+			<h4>Account Balance : <strong>{{accountDetails?.balance}}</strong> </h4>
+			<h4>Account Currency : <strong>{{accountDetails?.currency}}</strong> </h4>
+		</div>
+	</div>
+	<div class="card-footer text-muted">
+		Awarded as the best bank in the world!
+	</div>
+</div>
+
